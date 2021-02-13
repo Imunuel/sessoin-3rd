@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="{% static 'trpo/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'trpo/css/help.css' %}">
+    <link rel="stylesheet" href="{% static 'trpo/css/form.css' %}">
+    <link rel="stylesheet" href="{% static 'trpo/css/font.css' %}">
+</head>
+<body>
+
+    <div class="main">
+        <div class="header">
+            <img class="logo" src="{% static 'trpo/img/logo.png' %}" alt="">
+            <div class="menu">
+                <a href="{% url 'goods' %}"><button class="btn">Goods</button></a>
+                <a href="{% url 'order' %}"><button class="btn">Order</button></a>
+                <a href="{% url 'index' %}"><button class="btn">Home</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="frame">
+
+                <form class="form" action="" method="POST" style="display: block; width: 80%; height: auto;">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button class="send" style="margin-left: 48%; background: #2e5a7a;">Send</button>
+                </form>
+
+                
+                
+                <div class="message" style="font-size: 15px;font-family: 'font';">
+                    In the Name field, you can enter any name of your choice. It is only necessary so that we know how to address you. It can contain anything: your real name or a pseudonym.
+                    <br>In the Email field, you need to enter your email address so that we can contact you.
+                    <br>In the Phone field, enter your mobile phone number to contact you.
+                    <br>In the Message field, enter what you want to know. You will be contacted by mail later.
+                    <br>If there is a lack of information, you will be contacted via your mobile phone.
+                    <br>Good luck. 💜
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

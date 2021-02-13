@@ -1,0 +1,54 @@
+.product{
+    width: 80%;
+    height: 220px;
+    margin: 10%;
+    border: 3px solid #02b0b1;
+}
+.information{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.photo{
+    width: 40%;
+    height: 100%;
+}
+.description{
+    width: 60%;
+    height: 100%;
+}
+.about_product{
+    width: 96%;
+    height: 76%;
+    padding: 2%;
+    overflow: hidden;
+}
+.price{
+    width: 94%;
+    height: 98%;
+    padding-left: 3%;
+    padding-top: 1%;
+    font-size: 17px;
+}
+.hr{
+    background: #02b0b1;
+    height: 1px;
+}
+.search{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.code{
+    width: 38%;
+    height: auto;
+    padding: 2%;
+    font-size: 18px;
+    border-right: 3px solid #02b0b1;
+}
+.category{
+    width: 60%;
+    height: 96%;
+    padding: 2%;
+    font-size: 18px;
+}

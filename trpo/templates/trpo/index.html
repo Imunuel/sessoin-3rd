@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "{% static 'trpo/css/index.css' %}">
+    <link rel="stylesheet" href = "{% static 'trpo/css/font.css' %}">
+    <link rel="shortcut icon" href = "#">
+    <title>Belstroy</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img class="logo" src="{% static 'trpo/img/logo.png' %}" alt="">
+            <div class="menu">
+                <a href="{% url 'goods' %}"><button class="btn">Goods</button></a>
+                <a href="{% url 'order' %}"><button class="btn">Order</button></a>
+                <a href="{% url 'help' %}"><button class="btn">Help</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="frame">
+                {% for frame in Index %}
+                <div class="phrase">
+                    {{ frame.article }}
+                </div>
+                <div class="about_text">
+                    {{ frame.about }}
+                </div>
+                {% endfor %}
+
+                <div class="contacts">
+                    <div class="article">
+                        <b>Contacts</b>
+                    </div>
+                    
+                    <div class="contact">
+                        <b>Our address:</b> Karl Marx 2a
+                    </div>
+                    <div class="contact">
+                        <b>Our mobile phone:</b> 354-(55)-825-53-24
+                    </div>
+                    <div class="contact">
+                       <b>Email:</b> belstroy@mail.ru
+                    </div>
+                    <div class="contact">
+                        <b>facebook:</b> facebook.com/belstroy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

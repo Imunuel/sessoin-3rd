@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f4f4f4;
+}
+a{
+    text-decoration: none;
+}
+
+
+.main{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: #02b0b1;
+    display: flex;
+}
+.header{
+    width: 16%;
+    height: 500px;
+    background: #02b0b1;
+    position: fixed;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.logo{
+    width: 90%;
+    height: 40%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.menu{
+    width: 100%;
+    height: 200px;
+    margin-top: 60%;
+}
+.btn{
+    width: 70%;
+    height: 50px;
+    margin: 5%;
+    margin-left: 15%;
+    border-radius: 30px;
+    background: #2e5a7a;
+    font-size: 20px;
+    color: white;
+    border-color: white;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.btn:active, .btn:focus {
+    outline: none;
+  }
+.content{
+    width: 80%;
+    height: auto;
+    background: white;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+}
+.frame{
+    width: 80%;
+    height: auto;
+    margin: 5%;
+    border: 5px solid #02b0b1;
+}
+.phrase{
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    margin: 30px;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.about_text{
+    width: 80%;
+    height: auto;
+    border: 2px solid #02b0b1;
+    margin-left: 7%;
+    margin-bottom: 10%;
+    padding: 3%;
+    font-size: 18px;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.contacts{
+    width: 66%;
+    height: auto;
+    padding: 2%;
+    margin: 3%;
+    margin-top: 12%;
+    margin-left: 15%;
+    border-radius: 20px;
+    border: 2px solid #02b0b1;
+    background: #f4f4f4;
+}
+.contact{
+    width: 80%;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 10%;
+}
+.article{
+    width: 50%;
+    height: 30px;
+    margin: 2%;
+    margin-left: 10%;
+    font-size: 25px;
+}

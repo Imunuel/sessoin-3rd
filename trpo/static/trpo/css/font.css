@@ -1,0 +1,19 @@
+@font-face{
+    font-family: 'font';
+    src: url('18823.ttf');
+}
+.menu{
+    font-family: unset;
+}
+.phrase{
+    font-family: 'font';
+}
+.about_text{
+    font-family: 'font';
+}
+.contacts{
+    font-family: 'font';
+}
+.send{
+    font-family: 'font';
+}

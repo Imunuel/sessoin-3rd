@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="{% static 'trpo/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'trpo/css/order.css' %}">
+    <link rel="stylesheet" href="{% static 'trpo/css/form.css' %}">
+    <link rel="stylesheet" href="{% static 'trpo/css/font.css' %}">
+</head>
+<body>
+
+    <div class="main">
+        <div class="header">
+            <img class="logo" src="{% static 'trpo/img/logo.png' %}" alt="">
+            <div class="menu">
+                <a href="{% url 'goods' %}"><button class="btn">Goods</button></a>
+                <a href="{% url 'index' %}"><button class="btn">Home</button></a>
+                <a href="{% url 'help' %}"><button class="btn">Help</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="frame">
+                
+
+                <form class="form" action="" method="POST">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button type="submit" class="send" style="margin-left: 48%; background: #2e5a7a;">Order</button>
+                </form>
+                
+                <div class="message">
+                    In the Name field, you can enter any name of your choice. It is only necessary so that we know how to address you. It can contain anything: your real name or a pseudonym.
+                <br>In the Address field, enter the address where we need to deliver the product. You need to write the address where you will be able to pick up the goods.
+                <br>In the Phone field, enter your mobile phone number to contact you.
+                <br>In the Goods field, select all the products you are interested in. You can select several products by holding down the Ctrl key and clicking on the desired product.
+                <br>Good luck. 💜
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        select{
+            width: 100%;
+        }
+        .form{
+            -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                -o-user-select: none;
+                user-select: none;
+        }
+        .message{
+            width: 76%;
+            height: auto;
+            border: 3px solid red;
+            background: #ff000060;
+            padding: 2%;
+            margin: 5%;
+            margin-left: 10%;
+            font-size: 15px;
+            font-family: 'font';
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f4f4f4;
+}
+.main{
+    width: 80%;
+    height: auto;
+    border: 5px solid #02b0b1;
+    padding: 2%;
+    margin: 5%;
+    margin-left: 8%;
+    border-radius: 20px;
+}
+.person{
+    width: 80%;
+    height: auto;
+    margin: 1%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.full_name{
+    width: 44%;
+    height: 25px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #02b0b1;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-left: 1%;
+    font-size: 20px;
+}
+.position{
+    width: 32%;
+    height: 25px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #02b0b1;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-left: 1%;
+    font-size: 20px;
+}
+.salary{
+    width: 20%;
+    height: 25px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #02b0b1;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-left: 1%;
+    font-size: 20px;
+}

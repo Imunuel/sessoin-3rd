@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "{% static 'trpo/css/index.css' %}">
+    <link rel="stylesheet" href = "{% static 'trpo/css/items.css' %}">
+    <link rel="stylesheet" href = "{% static 'trpo/css/font.css' %}">
+    <link rel="shortcut icon" href = "#">
+    <title>Goods</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img class="logo" src="{% static 'trpo/img/logo.png' %}" alt="">
+            <div class="menu">
+                <a href="{% url 'index' %}"><button class="btn">Home</button></a>
+                <a href="{% url 'order' %}"><button class="btn">Order</button></a>
+                <a href="{% url 'help' %}"><button class="btn">Help</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="frame">
+
+                {% for item in Goods %}
+                <div class="product" style="font-family: 'font';">
+                    <div class="information">
+                        <img class="photo" src="{{ item.photo.url }}" alt="">
+                        <div class="description">
+                            <div class="about_product">
+                                {{ item.about_product }}
+                            </div>
+                            <div class="price">
+                                Price: {{ item.price }}$
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="search">
+                    <div class="code">
+                        Code item: {{ item.id }}
+                    </div>
+                    <div class="category">
+                        Category: {{ item.category }}
+                    </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

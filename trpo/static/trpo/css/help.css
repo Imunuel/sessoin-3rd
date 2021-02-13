@@ -1,0 +1,30 @@
+.message{
+    width: 76%;
+    height: auto;
+    border: 3px solid red;
+    background: #ff000060;
+    padding: 2%;
+    margin: 5%;
+    margin-left: 10%;
+    font-size: 20px;
+}
+.send{
+    width: 145px;
+    height: 50px;
+    margin: 2%;
+    margin-left: 48%;
+    border-radius: 30px;
+    background: #2e5a7a;
+    font-size: 20px;
+    color: white;
+    border-color: white;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.send:active, .send:focus {
+    outline: none;
+}
