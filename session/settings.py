@@ -19,6 +19,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'gallery.apps.GalleryConfig',
     'eco.apps.EcoConfig',
     'trpo.apps.TrpoConfig',
     # 'belstroy.apps.BelstroyConfig',

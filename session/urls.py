@@ -9,6 +9,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('eco/', include('eco.urls')),
     path('trpo/', include('trpo.urls')),
+    path('gallery/', include('gallery.urls')),
+
     # path('bestroy/', include('belstroy.urls')),
 
     path('admin/', admin.site.urls),
