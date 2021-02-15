@@ -11,8 +11,6 @@ urlpatterns = [
     path('trpo/', include('trpo.urls')),
     path('gallery/', include('gallery.urls')),
 
-    # path('bestroy/', include('belstroy.urls')),
-
     path('admin/', admin.site.urls),
 ]
 

@@ -19,10 +19,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'gallery.apps.GalleryConfig',
     'eco.apps.EcoConfig',
     'trpo.apps.TrpoConfig',
-    # 'belstroy.apps.BelstroyConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',

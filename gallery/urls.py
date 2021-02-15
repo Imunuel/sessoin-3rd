@@ -1,7 +1,14 @@
 from django.urls import path
-from . import views
+from .views import ExhibitionsViewSet
+from rest_framework import routers
 
 
-urlpatterns = [
-    # path('', views.ECO.as_view(), name='index'),
-]
+router = routers.SimpleRouter()
+router.register(r'exhibitions', ExhibitionsViewSet)
+
+urlpatterns = router.urls
+
+
+
+
+
