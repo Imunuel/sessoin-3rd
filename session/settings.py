@@ -20,6 +20,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'rest_framework',
+    'djoser',
+    'rest_framework.authtoken',
+
     'gallery.apps.GalleryConfig',
     'eco.apps.EcoConfig',
     'trpo.apps.TrpoConfig',
@@ -31,6 +34,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ]
+}
+SIMPLE_JWT = {
+   'AUTH_HEADER_TYPES': ('JWT',),
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

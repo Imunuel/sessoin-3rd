@@ -10,6 +10,9 @@ urlpatterns = [
     path('eco/', include('eco.urls')),
     path('trpo/', include('trpo.urls')),
     path('gallery/', include('gallery.urls')),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.jwt')),
+
 
     path('admin/', admin.site.urls),
 ]
